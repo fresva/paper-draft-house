@@ -21,6 +21,14 @@ The pipeline guides you through turning a data analysis notebook into an academi
 | 11 | **Build voice profile** — interactive analysis of your writing samples | `voice_profile.md` |
 | 12 | **Match voice** — AI adapts the draft to match your personal writing style | `paper_draft_v3.md` |
 
+## Your role in the pipeline
+
+This is not an automated paper generator. The AI produces working drafts; you shape them into a paper worth publishing.
+
+Every step writes a markdown file to `pipeline/`. Before moving to the next step, open that file and review it critically. Fix factual errors. Sharpen vague formulations. Remove claims you don't stand behind. Add context the AI couldn't know. Each step builds on the output of previous steps, so problems left unaddressed will carry forward and compound.
+
+The interactive steps (1, 2, 5, 9, 11) involve direct dialogue — the AI asks questions and you make decisions together. The agent steps (3, 6, 8, 10, 12) run autonomously and produce drafts that need your judgement afterward. Neither kind of step produces finished output. The pipeline gives you a scaffold; the paper is yours to build.
+
 ## Installation
 
 Open a terminal, navigate to your paper project folder (ideally containing your `.ipynb` notebook), and clone this repo as the `.claude` directory:
