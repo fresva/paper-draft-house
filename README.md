@@ -34,7 +34,7 @@ That's it. Open the project folder in Claude Code or the Claude Desktop app and 
 
 ## Requirements
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (CLI) or Claude Desktop app
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (CLI) or Claude Desktop app (use the **Code** tab, not Cowork)
 - A Jupyter notebook (`.ipynb`) in the project root
 
 ## How it works
