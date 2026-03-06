@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Write(/pipeline/**)",
+      "Edit(/pipeline/**)",
+      "WebSearch",
+      "WebFetch"
+    ]
+  }
+}
