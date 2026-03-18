@@ -39,17 +39,17 @@ Steps marked **MANUAL** require user action outside Claude Code.
 | Step | Type   | Command                    | Output                                 |
 |------|--------|----------------------------|----------------------------------------|
 | 1    | SKILL  | `/analyze-notebook`        | `pipeline/notebook_summary.md`         |
-| 2    | SKILL  | `/make-style-composition`  | `pipeline/paper_composition.md`        |
-| 3    | AGENT  | `/reference-identifier`    | `pipeline/key_references.md`           |
+| 2    | SKILL  | `/make-composition`        | `pipeline/paper_composition.md`        |
+| 3    | AGENT  | `/find-references`         | `pipeline/key_references.md`           |
 | 4    | MANUAL | —                          | `literature/` populated with PDFs      |
-| 5    | SKILL  | `/make-paper-structure`    | `pipeline/paper_structure.md`          |
-| 6    | AGENT  | `/paper-writer`            | `pipeline/paper_draft.md`              |
+| 5    | SKILL  | `/make-structure`          | `pipeline/paper_structure.md`          |
+| 6    | AGENT  | `/write-draft`             | `pipeline/paper_draft.md`              |
 | 7    | MANUAL | —                          | `literature/` extended with all PDFs   |
-| 8    | AGENT  | `/citation-assessor`       | `pipeline/citation_report.md`          |
+| 8    | AGENT  | `/assess-citations`        | `pipeline/citation_report.md`          |
 | 9    | SKILL  | `/integrate-references`    | `pipeline/paper_draft_v2.md`           |
-| 10   | AGENT  | `/critical-reviewer`       | `pipeline/paper_review.md`             |
+| 10   | AGENT  | `/review-draft`            | `pipeline/paper_review.md`             |
 | 11   | SKILL  | `/build-voice-profile`     | `pipeline/voice_profile.md`            |
-| 12   | AGENT  | `/voice-matcher`           | `pipeline/paper_draft_v3.md`           |
+| 12   | AGENT  | `/match-voice`             | `pipeline/paper_draft_v3.md`           |
 
 ---
 

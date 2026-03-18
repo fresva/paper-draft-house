@@ -1,6 +1,6 @@
 ---
-name: make-style-composition
-description: Interactive dialogue to define the paper's scholarly identity using the APFRQMC framework. Use when the user invokes /make-style-composition. Expects pipeline/notebook_summary.md to exist.
+name: make-composition
+description: Interactive dialogue to define the paper's scholarly identity using the APFRQMC framework. Use when the user invokes /make-composition. Expects pipeline/notebook_summary.md to exist.
 allowed-tools: Read, Write, Glob
 disable-model-invocation: true
 ---

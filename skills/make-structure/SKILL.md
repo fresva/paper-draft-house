@@ -1,6 +1,6 @@
 ---
-name: make-paper-structure
-description: Interactive dialogue to work out the paper's argumentative structure. Use when the user invokes /make-paper-structure. Expects pipeline files from steps 1 and 2 to exist.
+name: make-structure
+description: Interactive dialogue to work out the paper's argumentative structure. Use when the user invokes /make-structure. Expects pipeline files from steps 1 and 2 to exist.
 allowed-tools: Read, Write, Glob
 disable-model-invocation: true
 ---
