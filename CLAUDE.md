@@ -6,6 +6,14 @@ each generating intermediate markdown files stored in `pipeline/`.
 
 ---
 
+## Bootstrap
+
+On first use, check whether `pipeline/`, `literature/`, and `samples/` exist.
+If any are missing, tell the user which ones need to be created and create them.
+Do this before any other work.
+
+---
+
 ## Project Structure
 
 ```
@@ -59,8 +67,6 @@ On any invocation, determine project state by checking which files exist in `pip
 The presence of a file means that step has been completed. Do not assume steps run in
 strict order — the user may revisit or skip steps. Always read existing pipeline files
 before producing new output, to maintain coherence.
-
-If `pipeline/`, `literature/`, or `samples/` do not yet exist, create them before proceeding.
 
 ---
 
