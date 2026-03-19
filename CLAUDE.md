@@ -60,6 +60,8 @@ The presence of a file means that step has been completed. Do not assume steps r
 strict order — the user may revisit or skip steps. Always read existing pipeline files
 before producing new output, to maintain coherence.
 
+If `pipeline/`, `literature/`, or `samples/` do not yet exist, create them before proceeding.
+
 ---
 
 ## Writing Standards
