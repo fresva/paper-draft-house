@@ -6,7 +6,8 @@ agent: critical-reviewer
 disable-model-invocation: true
 ---
 
-When invoked, ALWAYS use the Agent tool to run the **critical-reviewer** agent. Do NOT execute the agent's task inline.
+When invoked, ALWAYS use the Agent tool to run the agent: '/critical-reviewer'
+Do NOT execute the agent's task inline.
 
 The agent reads the paper draft and produces an independent peer review — assessing contribution clarity, argumentative coherence, use of literature, methodology, and writing quality. The result is written to `pipeline/paper_review.md`.
 

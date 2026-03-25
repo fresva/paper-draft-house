@@ -6,7 +6,8 @@ agent: reference-identifier
 disable-model-invocation: true
 ---
 
-When invoked, ALWAYS use the Agent tool to run the **reference-identifier** agent. Do NOT execute the agent's task inline.
+When invoked, ALWAYS use the Agent tool to run the agent: '/reference-identifier' 
+Do NOT execute the agent's task inline.
 
 The agent reads your notebook summary and paper composition, then uses web search to identify and verify 15–25 key references the paper should engage with. The result is written to `pipeline/key_references.md`.
 

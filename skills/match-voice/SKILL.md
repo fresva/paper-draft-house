@@ -6,7 +6,8 @@ agent: voice-matcher
 disable-model-invocation: true
 ---
 
-When invoked, ALWAYS use the Agent tool to run the **voice-matcher** agent. Do NOT execute the agent's task inline.
+When invoked, ALWAYS use the Agent tool to run the agent: '/voice-matcher'
+Do NOT execute the agent's task inline.
 
 The agent reshapes the prose in `pipeline/paper_draft.md` to match your personal writing style as defined in `pipeline/voice_profile.md`. The result is written to `pipeline/paper_draft_v3.md`.
 
