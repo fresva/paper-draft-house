@@ -1,16 +1,18 @@
 # PaperDraftHouse
 
-An AI-augmented academic paper writing pipeline for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and the Claude Desktop app. Takes a Jupyter notebook through 12 structured steps — from analysis to a voice-matched draft — alternating between interactive dialogue, background AI agents, and manual curation.
+An AI-augmented academic paper writing pipeline for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and the Claude Desktop app. Takes a Jupyter notebook through 12 structured steps, from analysis to a voice-matched draft, alternating between interactive dialogue, background AI agents, and manual curation.
 
 ## Why this exists
 
-Academic writing is changing. AI tools are increasingly capable of supporting research processes, from literature discovery to drafting prose. However, as a research community, we are not in consensus on how these tools should be used. This pipeline is created to explore what AI-augmented paper writing looks like in practice: what works, what doesn't, where human judgement is irreplaceable, and where AI support is genuinely useful.
+This pipeline explores what AI-augmented academic paper writing looks like in practice: what works, what doesn't, where human judgement is irreplaceable, and where AI support is genuinely useful.
 
-By making the process structured and transparent — with every intermediate step producing a reviewable artifact — the pipeline is also meant to provoke discussion. The technology is here. Ignoring it won't make it go away. Exploring it openly seems more productive than pretending the question doesn't exist.
+The motivation comes from a paradox I keep running into. On any given task, like literature search, structuring an argument, or drafting prose, AI makes me better. But at the macro level, unreflected use introduces systemic risks: *unintentional value drift* (my standards for what good writing is silently shift through constant exposure to AI-generated text), *loss of explainability* (I can no longer fully reconstruct or defend the reasoning behind my own paper), and *automation complacency* (I stop questioning outputs that have been reliably good, and miss the time they aren't). This pipeline is an attempt to get the micro-level benefits while keeping the macro-level risks visible, by making every intermediate step a reviewable artifact that forces deliberate engagement.
+
+The technology is here. Ignoring it won't make it go away. Exploring it openly, and making the process transparent enough to critique, seems more productive than pretending the question doesn't exist.
 
 ## What it does
 
-The pipeline guides you through turning a data analysis notebook into an academic paper. Each step produces a markdown file in `pipeline/` — a working draft for you to review and edit before moving on. The quality of the final paper depends on your engagement with each intermediate output.
+The pipeline guides you through turning a data analysis notebook into an academic paper. Each step produces a markdown file in `pipeline/`, a working draft for you to review and edit before moving on. The quality of the final paper depends on your engagement with each intermediate output.
 
 | Step | What happens | Output |
 |------|-------------|--------|
@@ -29,11 +31,11 @@ The pipeline guides you through turning a data analysis notebook into an academi
 
 ## Your role in the pipeline
 
-This is not an automated paper generator. Each step produces an intermediate markdown file — a starting point for your judgement, not a finished output. You shape these into a paper worth publishing.
+This is not an automated paper generator. Each step produces an intermediate markdown file, a starting point for your judgement, not a finished output. You shape these into a paper worth publishing.
 
 Before moving to the next step, open the file and review it critically. Fix factual errors. Sharpen vague formulations. Remove claims you don't stand behind. Add context the AI couldn't know. Do your job as a researcher! Each step builds on the output of previous steps, so problems left unaddressed will carry forward and compound.
 
-The interactive steps (1, 2, 5, 9, 11) involve direct dialogue — the AI asks questions and you make decisions together. The agent steps (3, 6, 8, 10, 12) run autonomously and produce drafts that need your judgement afterward. Neither kind of step produces finished output. The pipeline gives you a scaffold; the paper is yours to build.
+The interactive steps (1, 2, 5, 9, 11) involve direct dialogue where the AI asks questions and you make decisions together. The agent steps (3, 6, 8, 10, 12) run autonomously and produce drafts that need your judgement afterward. Neither kind of step produces finished output. The pipeline gives you a scaffold; the paper is yours to build.
 
 ## Installation
 
@@ -58,7 +60,7 @@ The pipeline uses two mechanisms from Claude Code:
 - **Skills** (`/slash-commands`) — interactive dialogues that run in your main conversation. You and the AI work through decisions together.
 - **Agents** — background subagents that run autonomously on well-defined tasks (drafting, reviewing, citation checking).
 
-All intermediate files are stored in `pipeline/` as markdown. Each step reads previous outputs to maintain coherence. The pipeline is designed to be non-linear — you can revisit, re-run, or skip steps as needed.
+All intermediate files are stored in `pipeline/` as markdown. Each step reads previous outputs to maintain coherence. The pipeline is designed to be non-linear. You can revisit, re-run, or skip steps as needed.
 
 ## License
 
